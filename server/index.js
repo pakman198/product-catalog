@@ -1,8 +1,9 @@
 import express from 'express';
 
-import unsplash from './api';
+import axios from 'axios';
 
 const app = express();
+const baseURL = "https://www.westelm.com/services/catalog/v4/category/shop/new/all-new/index.json";
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", '*');
@@ -13,12 +14,7 @@ app.use(function(req, res, next) {
 app.get('/', async (req, res) => {
 
   try {
-    const response = await unsplash.get('/search/photos', {
-      params: {
-        query: 'furniture',
-        per_page: 12
-      }
-    });
+    const response = await axios.get(baseURL);
     console.log(response);
 
     return res.status(200).send(response.data);
@@ -28,23 +24,6 @@ app.get('/', async (req, res) => {
     return res.status(503).send({'message': 'Service Unavailable'});
   }
   
-});
-
-app.get('/photo/:id', async (req, res) => {
-
-  try {
-    const { id } = req.params;
-    const response = await unsplash.get(`/photos/${id}`);
-
-    console.log(response);
-
-    return res.status(200).send(response.data)
-
-  } catch(e) {
-    console.log(e)
-    return res.status(503).send({'message': 'Service Unavailable'});
-  }
-
 });
 
 app.listen(3001, () =>

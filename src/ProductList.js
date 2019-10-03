@@ -1,31 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
+import axios from 'axios';
 
-import CatalogContext from './CatalogContext';
-import Product from './Product';
+class ProductList extends Component {
 
-const ProductList = () => {
-
-  const renderProducts = (products) => {
-    return products.map(product => {
-      return (
-        <div key={product.id} className="four wide column">
-          <Product data={product} />
-        </div>
-      );
-    });
+  state = {
+    products: []
   }
 
-  return (
-    <CatalogContext.Consumer>
-      {
-        context => (
-          <div className="ui grid">
-            { renderProducts(context.products) }
-          </div>
-        )
-      }
-    </CatalogContext.Consumer>
-  );
+  componentDidMount() {
+    axios.get('http://localhost:3001/').then(({data}) => {
+      this.setState({ products: data.groups })
+    })
+  }
+
+  
+
+  render() {
+    return (
+      <div className="ui grid">
+        HOLA
+      </div>
+    );
+  }
 }
 
 export default ProductList;
