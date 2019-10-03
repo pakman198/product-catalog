@@ -27,5 +27,5 @@ app.get('/', async (req, res) => {
 });
 
 app.listen(3001, () =>
-  console.log('shopping-catalog app listening on port 3001!'),
+  console.log('product-catalog app listening on port 3001!'),
 );
