@@ -16,6 +16,8 @@ class ProductList extends Component {
   componentDidMount() {
     axios.get('http://localhost:3001/').then(({data}) => {
       this.setState({ products: data.groups })
+    }).catch(e => {
+      console.log(e);
     })
   }
 
