@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Product Rendered Properly 1`] = `
+<DocumentFragment>
+  <div
+    class="ui centered card"
+  >
+    <div
+      class="image"
+      role="button"
+    >
+      <img
+        alt="Tahoe Solid Wood Dining Table - Natural Oak"
+        src="https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0025/tahoe-solid-wood-dining-table-natural-oak-m.jpg"
+      />
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="header"
+      >
+        Tahoe Solid Wood Dining Table - Natural Oak
+      </div>
+    </div>
+    <div
+      class="extra content"
+    >
+      $1,359.20
+    </div>
+  </div>
+</DocumentFragment>
+`;

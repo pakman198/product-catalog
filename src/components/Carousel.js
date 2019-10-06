@@ -16,7 +16,7 @@ class Carousel extends React.Component {
     return images.map((image, index) => {
       const styles = { backgroundImage: `url(${image.href})`}
       return (
-        <div key={index} className="slide" style={styles}></div>
+        <div  key={index} className="slide" style={styles}></div>
       )
     });
   }
@@ -62,17 +62,20 @@ class Carousel extends React.Component {
           { this.renderSlides() }
         </div>
         <button 
+          aria-label="prev-slide"
           className="ui inverted secondary circular angle left icon button left-arrow"
           onClick={this.prevSlide}
         >
           <i className="angle left icon"></i>
         </button>
         <button 
+          aria-label="next-slide"
           className="ui inverted secondary circular angle right icon button right-arrow"
           onClick={this.nextSlide}
         >
           <i className="angle right icon"></i>
         </button>
+        <span style={{display: 'none'}} data-testid="current-index">{this.state.currentIndex}</span>
       </div>
     )
   }

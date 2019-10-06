@@ -18,7 +18,7 @@ class ModalProvider extends Component {
       currentItem
 
     }, () => {
-      console.log(this.state)
+      // console.log(this.state)
     });
   }
 

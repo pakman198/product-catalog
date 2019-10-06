@@ -1,0 +1,226 @@
+[
+  {
+    "id": "tahoe-dining-table-natural-oak-h4713",
+    "name": "Tahoe Solid Wood Dining Table - Natural Oak",
+    "links": {
+      "www": "https://www.westelm.com/products/tahoe-dining-table-natural-oak-h4713/"
+    },
+    "priceRange": {
+      "regular": {
+        "high": 1899,
+        "low": 1699
+      },
+      "selling": {
+        "high": 1519.2,
+        "low": 1359.2
+      },
+      "type": "special"
+    },
+    "thumbnail": {
+      "size": "m",
+      "meta": "",
+      "alt": "",
+      "rel": "thumbnail",
+      "width": 363,
+      "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0011/tahoe-solid-wood-dining-table-natural-oak-2-m.jpg",
+      "height": 363
+    },
+    "hero": {
+      "size": "m",
+      "meta": "",
+      "alt": "",
+      "rel": "hero",
+      "width": 363,
+      "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0025/tahoe-solid-wood-dining-table-natural-oak-m.jpg",
+      "height": 363
+    },
+    "images": [
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0011/tahoe-solid-wood-dining-table-natural-oak-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0012/tahoe-solid-wood-dining-table-natural-oak-2-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0011/tahoe-solid-wood-dining-table-natural-oak-3-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0012/tahoe-solid-wood-dining-table-natural-oak-1-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0068/tahoe-solid-wood-dining-table-natural-oak-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0011/tahoe-solid-wood-dining-table-natural-oak-1-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201937/0019/tahoe-dining-table-natural-oak-2-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201937/0018/tahoe-dining-table-natural-oak-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201939/0030/tahoe-solid-wood-dining-bench-natural-oak-m.jpg",
+        "height": 363
+      }
+    ],
+    "swatches": [],
+    "messages": [],
+    "flags": [
+      {
+        "bopisSuppress": false,
+        "rank": 3,
+        "id": "newcore"
+      },
+      {
+        "bopisSuppress": false,
+        "rank": 8,
+        "id": "handmade"
+      }
+    ],
+    "reviews": {
+      "recommendationCount": 0,
+      "likelihood": 0,
+      "reviewCount": 0,
+      "averageRating": 0,
+      "id": "tahoe-dining-table-natural-oak-h4713",
+      "type": "GROUP_REVIEWS"
+    }
+  },
+  {
+    "id": "frame-dining-table-caramel-antique-bronze-h4739",
+    "name": "Frame Dining Table - Caramel/Antique Bronze",
+    "links": {
+      "www": "https://www.westelm.com/products/frame-dining-table-caramel-antique-bronze-h4739/"
+    },
+    "price": {
+      "regular": 699,
+      "selling": 559.2,
+      "type": "special"
+    },
+    "thumbnail": {
+      "size": "m",
+      "meta": "",
+      "alt": "",
+      "rel": "thumbnail",
+      "width": 363,
+      "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0064/frame-dining-table-caramel-antique-bronze-1-m.jpg",
+      "height": 363
+    },
+    "hero": {
+      "size": "m",
+      "meta": "",
+      "alt": "",
+      "rel": "hero",
+      "width": 363,
+      "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0012/frame-dining-table-caramel-antique-bronze-m.jpg",
+      "height": 363
+    },
+    "images": [
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0064/frame-dining-table-caramel-antique-bronze-2-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0064/frame-dining-table-caramel-antique-bronze-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201937/0019/frame-dining-table-caramel-antique-bronze-m.jpg",
+        "height": 363
+      },
+      {
+        "size": "m",
+        "meta": "",
+        "alt": "",
+        "rel": "althero",
+        "width": 363,
+        "href": "https://www.westelm.com/weimgs/rk/images/wcm/products/201937/0018/frame-dining-table-caramel-antique-bronze-m.jpg",
+        "height": 363
+      }
+    ],
+    "swatches": [],
+    "messages": [],
+    "flags": [{
+      "bopisSuppress": false,
+      "rank": 3,
+      "id": "newcore"
+    }],
+    "reviews": {
+      "recommendationCount": 0,
+      "likelihood": 0,
+      "reviewCount": 0,
+      "averageRating": 0,
+      "id": "frame-dining-table-caramel-antique-bronze-h4739",
+      "type": "GROUP_REVIEWS"
+    }
+  }
+]

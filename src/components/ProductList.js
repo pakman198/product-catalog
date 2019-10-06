@@ -23,8 +23,7 @@ class ProductList extends Component {
 
   renderProducts() {
     const { products } = this.state;
-    if ( products.length === 0 ) return null;
-
+    if ( !products || products.length === 0) return null;
 
     return products.map(product => {
       return (
@@ -44,10 +43,9 @@ class ProductList extends Component {
   }
 
   render() {
-
-    console.log(this.context)
-
     const products = this.renderProducts();
+    // console.log(this.context)
+
     return (
       <>
         <div className="product-list ui stackable three column grid">
