@@ -13,7 +13,7 @@ const currency = (num) => {
 
 const Product = (props) => {
   const context = useContext(ModalContext);
-  console.log({context})
+  // console.log({context})
   const { data, data: { name, hero }} = props;
 
   const price = data.price || data.priceRange;
@@ -22,7 +22,7 @@ const Product = (props) => {
 
   return (
     <div className="ui centered card">
-      <div className="image" onClick={() => context.toggleModal(data)}>
+      <div className="image" onClick={() => context.toggleModal(data)} role="button">
         <img src={hero.href} alt={name} />
       </div>
       <div className="content">

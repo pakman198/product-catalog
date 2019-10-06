@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal.js Modal is displayed 1`] = `
+<DocumentFragment>
+  <div
+    class="ui dimmer modals visible active"
+  >
+    <div
+      class="ui modal tiny visible active"
+    >
+      <div
+        class="header"
+      >
+        Modal Header
+      </div>
+      <div
+        class="content"
+      >
+        <div
+          class="slider"
+        >
+          <div
+            class="slider-wrapper"
+            style="transform: translateX(0px);"
+          >
+            <div
+              class="slide"
+              style="background-image: url(https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0011/tahoe-solid-wood-dining-table-natural-oak-m.jpg);"
+            />
+            <div
+              class="slide"
+              style="background-image: url(https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0012/tahoe-solid-wood-dining-table-natural-oak-2-m.jpg);"
+            />
+          </div>
+          <button
+            aria-label="prev-slide"
+            class="ui inverted secondary circular angle left icon button left-arrow"
+          >
+            <i
+              class="angle left icon"
+            />
+          </button>
+          <button
+            aria-label="next-slide"
+            class="ui inverted secondary circular angle right icon button right-arrow"
+          >
+            <i
+              class="angle right icon"
+            />
+          </button>
+          <span
+            data-testid="current-index"
+            style="display: none;"
+          >
+            0
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

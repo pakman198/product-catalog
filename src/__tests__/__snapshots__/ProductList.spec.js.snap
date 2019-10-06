@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductList Is displayed properly 1`] = `
+<DocumentFragment>
+  <div
+    class="product-list ui stackable three column grid"
+  />
+</DocumentFragment>
+`;

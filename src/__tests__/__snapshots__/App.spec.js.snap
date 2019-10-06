@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.js 1`] = `
+<DocumentFragment>
+  <div
+    class="ui container"
+  >
+    <div
+      class="ui borderless top fixed menu"
+    >
+      <div
+        class="item"
+      >
+        <i
+          class="large icon fly"
+        />
+        WestElm
+      </div>
+    </div>
+    <div
+      class="product-list ui stackable three column grid"
+    />
+  </div>
+</DocumentFragment>
+`;

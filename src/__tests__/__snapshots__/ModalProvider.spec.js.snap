@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalProvider It renders properly 1`] = `
+<DocumentFragment>
+  <div>
+    <button>
+      Click Me
+    </button>
+    <span
+      data-testid="item"
+    >
+      Item
+    </span>
+  </div>
+</DocumentFragment>
+`;
