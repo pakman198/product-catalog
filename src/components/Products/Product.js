@@ -1,7 +1,7 @@
 import './Product.scss';
 import React, { useContext } from 'react';
 
-import ModalContext from '../ModalContext';
+import { ModalContext } from '../../contexts/ModalContext';
 
 const currency = (num) => {
   return new Intl.NumberFormat('en-US', {

@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
-import ModalContext from '../ModalContext';
-  
-class ModalProvider extends Component {
+export const ModalContext = React.createContext();
+
+export class ModalProvider extends Component {
 
   state = {
     isModalVisible: false,
@@ -37,4 +37,3 @@ class ModalProvider extends Component {
   }
 }
 
-export default ModalProvider;

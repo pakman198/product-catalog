@@ -2,9 +2,9 @@ import './ProductList.scss';
 import React, { Component } from 'react';
 import axios from 'axios';
 
-import Product from './Product';
-import Modal from './Modal';
-import ModalContext from '../ModalContext';
+import Product from '../Product';
+import Modal from '../../Modal/Modal';
+import { ModalContext } from '../../../contexts/ModalContext';
 
 class ProductList extends Component {
   static contextType = ModalContext;
