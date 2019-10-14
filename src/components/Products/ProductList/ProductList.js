@@ -1,60 +1,43 @@
 import './ProductList.scss';
-import React, { Component } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import axios from 'axios';
 
 import Product from '../Product';
 import Modal from '../../Modal/Modal';
 import { ModalContext } from '../../../contexts/ModalContext';
 
-class ProductList extends Component {
-  static contextType = ModalContext;
+const ProductList = () => {
+  const modalContext = useContext(ModalContext);
+  const [ products, setProducts ] = useState([]);
 
-  state = {
-    products: []
-  }
-
-  componentDidMount() {
+  useEffect(() => {
     axios.get('http://localhost:3001/').then(({data}) => {
-      this.setState({ products: data.groups })
+      setProducts(data.groups);
     }).catch(e => {
       console.log(e);
     })
-  }
+  }, [])
 
-  renderProducts() {
-    const { products } = this.state;
-    if ( !products || products.length === 0) return null;
-
-    return products.map(product => {
+  let items = null;
+  if ( products || products.length !== 0) {
+    items =  products.map(product => {
       return (
         <div key={product.id} className="column">
           <Product data={product} />   
         </div>
-      )
-    })
+      );
+    });
   }
 
-  renderModal() {
-    const { toggleModal, currentItem: { name, images }} = this.context;
-
-    return (
-      <Modal title={name} images={images} onDismiss={toggleModal} />
-    )
-  }
-
-  render() {
-    const products = this.renderProducts();
-    // console.log(this.context)
-
-    return (
-      <>
-        <div className="product-list ui stackable three column grid">
-          { products }
-        </div>
-        { this.context.isModalVisible ? this.renderModal() : null }
-      </>
-    );
-  }
+  return (
+    <>
+      <div className="product-list ui stackable three column grid">
+        { items }
+      </div>
+      { modalContext.isModalVisible ? <Modal /> : null }
+    </>
+  );
+  
 }
 
 export default ProductList;
