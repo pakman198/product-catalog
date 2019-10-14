@@ -6,8 +6,7 @@ import {
 } from '@testing-library/react'
 import '@testing-library/jest-dom';
 
-import ModalProvider from '../components/ModalProvider';
-import ModalContext from '../ModalContext';
+import { ModalContext, ModalProvider } from '../contexts/ModalContext';
 
 import data from '../__mocks__/apiResponse.json';
 

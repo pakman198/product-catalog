@@ -6,8 +6,8 @@ import {
 } from '@testing-library/react'
 import '@testing-library/jest-dom';
 
-import Product from '../components/Product';
-import ModalContext from '../ModalContext';
+import Product from '../components/Products/Product';
+import { ModalContext } from '../contexts/ModalContext';
 import data from '../__mocks__/apiResponse.json';
 
 describe('Product', () => {
@@ -39,7 +39,7 @@ describe('Product', () => {
     expect(price).toBeInTheDOM;
   });
 
-  test('Triggers conext property method when image clicked', async () => {
+  test('Triggers context property method when image clicked', async () => {
     const { getByRole } = render(
       <ModalContext.Provider value={context}>
         <Product data={product1}/>

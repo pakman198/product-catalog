@@ -19,7 +19,7 @@ const ProductList = () => {
   }, [])
 
   let items = null;
-  if ( products || products.length !== 0) {
+  if ( products && products.length !== 0) {
     items =  products.map(product => {
       return (
         <div key={product.id} className="column">

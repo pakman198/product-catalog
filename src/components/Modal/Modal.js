@@ -19,7 +19,7 @@ const Modal = () => {
                 className="ui modal tiny visible active"
                 onClick={e => e.stopPropagation()}
               >
-                <div className="header">{currentItem.name}</div>
+                <div className="header" data-testid="modal-header">{currentItem.name}</div>
                 <div className="content">
                   <Carousel images={currentItem.images} />
                 </div>

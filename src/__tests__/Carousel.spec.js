@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, waitForElement } from '@testing-library/react'
 import '@testing-library/jest-dom';
 
-import Carousel from '../components/Carousel';
+import Carousel from '../components/Modal/Carousel/Carousel';
 
 describe('Carousel.js', () => {
 
