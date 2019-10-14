@@ -1,39 +1,29 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 
 export const ModalContext = React.createContext();
 
-export class ModalProvider extends Component {
+export const ModalProvider = (props) => {
+  const [ isModalVisible, setIsModalVisible ] = useState(false);
+  const [ currentItem, setCurrentItem ] = useState({});
+  
 
-  state = {
-    isModalVisible: false,
-    currentItem: {}
+  const toggleModal = (item) => {
+    const selectedItem = item ? item : null;
+
+    setIsModalVisible(!isModalVisible);
+    setCurrentItem(selectedItem);
   }
 
-  toggleModal = (item) => {
-    const { isModalVisible } = this.state;
-    const currentItem = item ? item : null;
-
-    this.setState({
-      isModalVisible: !isModalVisible,
-      currentItem
-
-    }, () => {
-      // console.log(this.state)
-    });
+  const contextValue = {
+    currentItem,
+    isModalVisible,
+    toggleModal
   }
-
-  render() {
-    const contextValue = {
-      currentItem: this.state.currentItem,
-      isModalVisible: this.state.isModalVisible,
-      toggleModal: this.toggleModal
-    }
-
-    return (
-      <ModalContext.Provider value={contextValue}>
-        {this.props.children}
-      </ModalContext.Provider>
-    );
-  }
+    
+  return (
+    <ModalContext.Provider value={contextValue}>
+      { props.children }
+    </ModalContext.Provider>
+  );
 }
 

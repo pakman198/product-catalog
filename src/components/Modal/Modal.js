@@ -1,42 +1,47 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 
 import Carousel from './Carousel/Carousel';
+import { ModalContext } from '../../contexts/ModalContext';
 
-class Modal extends React.Component {
+const Modal = () => {
 
-  renderModal() {
-    const { title, images, onDismiss } = this.props;
-
+  const renderModal = () => {
     return (
-      <div 
-        className="ui dimmer modals visible active"
-        onClick={() => onDismiss()}
-      >
-        <div 
-          className="ui modal tiny visible active"
-          onClick={e => e.stopPropagation()}
-        >
-          <div className="header">{title}</div>
-          <div className="content">
-            <Carousel images={images} />
-          </div>
-        </div>
-      </div>
+      <ModalContext.Consumer>
+        {
+          ({ currentItem, toggleModal }) => (
+            <div 
+              className="ui dimmer modals visible active"
+              onClick={() => toggleModal()}
+            >
+              <div 
+                className="ui modal tiny visible active"
+                onClick={e => e.stopPropagation()}
+              >
+                <div className="header">{currentItem.name}</div>
+                <div className="content">
+                  <Carousel images={currentItem.images} />
+                </div>
+              </div>
+            </div>
+          )
+        }
+      </ModalContext.Consumer>
     );
   }
 
-  componentWillUnmount() {
-    document.querySelector('#modal').classList.remove('visible');
-  }
+  useEffect(() => {
+    return () => {
+      document.querySelector('#modal').classList.remove('visible');
+    }
+  });
 
-  render() {
-    const node = document.querySelector('#modal')
-    node.classList.add('visible');
-    const modal = this.renderModal();
+  const node = document.querySelector('#modal')
+  node.classList.add('visible');
+  const modal = renderModal();
 
-    return ReactDOM.createPortal(modal, node);
-  }
+  return ReactDOM.createPortal(modal, node);
 }
 
 export default Modal;
