@@ -4,6 +4,77 @@ exports[`ProductList Is displayed properly 1`] = `
 <DocumentFragment>
   <div
     class="product-list ui stackable three column grid"
+  >
+    <div
+      class="column"
+    >
+      <div
+        class="ui centered card"
+      >
+        <div
+          class="image"
+          role="button"
+        >
+          <img
+            alt="Tahoe Solid Wood Dining Table - Natural Oak"
+            src="https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0025/tahoe-solid-wood-dining-table-natural-oak-m.jpg"
+          />
+        </div>
+        <div
+          class="content"
+        >
+          <div
+            class="header"
+          >
+            Tahoe Solid Wood Dining Table - Natural Oak
+          </div>
+        </div>
+        <div
+          class="extra content"
+        >
+          $1,359.20
+        </div>
+      </div>
+    </div>
+    <div
+      class="column"
+    >
+      <div
+        class="ui centered card"
+      >
+        <div
+          class="image"
+          role="button"
+        >
+          <img
+            alt="Frame Dining Table - Caramel/Antique Bronze"
+            src="https://www.westelm.com/weimgs/rk/images/wcm/products/201938/0012/frame-dining-table-caramel-antique-bronze-m.jpg"
+          />
+        </div>
+        <div
+          class="content"
+        >
+          <div
+            class="header"
+          >
+            Frame Dining Table - Caramel/Antique Bronze
+          </div>
+        </div>
+        <div
+          class="extra content"
+        >
+          $559.20
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ProductList The async request is rejected and an empty container is displayed 1`] = `
+<DocumentFragment>
+  <div
+    class="product-list ui stackable three column grid"
   />
 </DocumentFragment>
 `;
