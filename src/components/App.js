@@ -1,8 +1,8 @@
 import React from 'react';
 
-import ProductList from './ProductList';
+import ProductList from './Products/ProductList/ProductList';
 import Header from './Header';
-import ModalProvider from './ModalProvider';
+import { ModalProvider } from '../contexts/ModalContext';
 
 const App = () => {
     return (
