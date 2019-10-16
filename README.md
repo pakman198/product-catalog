@@ -27,6 +27,6 @@ The page will reload if you make edits.
 
 Launches the test runner in the interactive watch mode.<br>
 
-### `npm run build:prod`
+### `npm run build`
 
 Builds the app for production to the `build` folder.
