@@ -1,9 +1,14 @@
 # Product Catalog
 
-This app displays data from a API.
-Since the URL provided doesn't accept CORS, I had to create a node/express server to expose an endpoint and add some headers to my server.
-I used concurrently to be able to run multiple node tasks (start the express server and the react app) at the same time with a single command.
-I used [Semantic UI](https://semantic-ui.com/) for adding styles.
+This app is a product catalog that displays data from a API.
+
+Created a [node/express](https://expressjs.com/) server to expose an endpoint, since the URL provided didn't accept CORS. Added some headers to the server to be able to to cross-domain requests..
+
+Used [Semantic UI](https://semantic-ui.com/) for easy prototyping with a nice UI and adding the responsiveness for mobile devices.
+
+Used [concurrently](https://www.npmjs.com/package/concurrently) to be able to run multiple node tasks (start the express server and the react app) at the same time with a single command.
+
+The application was tested using [React Testing Library](https://testing-library.com/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
