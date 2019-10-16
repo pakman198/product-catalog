@@ -1,5 +1,5 @@
 { 
-  "name": "shopping-catalog",
+  "name": "product-catalog",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
