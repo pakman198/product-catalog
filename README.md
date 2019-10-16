@@ -2,6 +2,8 @@
 
 This app is a product catalog that displays data from a API.
 
+Implemented [React Hooks](https://reactjs.org/docs/hooks-intro.html) to replace class components. Used [React Portals](https://reactjs.org/docs/portals.html) to display a modal window.
+
 Created a [node/express](https://expressjs.com/) server to expose an endpoint, since the URL provided didn't accept CORS. Added some headers to the server to be able to to cross-domain requests..
 
 Used [Semantic UI](https://semantic-ui.com/) for easy prototyping with a nice UI and adding the responsiveness for mobile devices.
