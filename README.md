@@ -1,4 +1,5 @@
 # Product Catalog
+[![Build Status](https://travis-ci.com/pakman198/product-catalog.svg?branch=master)](https://travis-ci.com/pakman198/product-catalog) [![Coverage Status](https://coveralls.io/repos/github/pakman198/product-catalog/badge.svg?branch=master)](https://coveralls.io/github/pakman198/product-catalog?branch=master)
 
 This app is a product catalog that displays data from a API.
 
