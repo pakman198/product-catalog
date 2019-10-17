@@ -12,6 +12,7 @@
   "scripts": {
     "start": "concurrently npm:start:*",
     "test": "jest --coverage",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --coverage --watchAll=true",
     "start:server": "nodemon --exec babel-node server/index.js",
     "start:client": "webpack-dev-server",
