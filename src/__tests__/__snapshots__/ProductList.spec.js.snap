@@ -70,11 +70,3 @@ exports[`ProductList Is displayed properly 1`] = `
   </div>
 </DocumentFragment>
 `;
-
-exports[`ProductList The async request is rejected and an empty container is displayed 1`] = `
-<DocumentFragment>
-  <div
-    class="product-list ui stackable three column grid"
-  />
-</DocumentFragment>
-`;

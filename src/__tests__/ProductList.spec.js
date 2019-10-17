@@ -3,7 +3,8 @@ import axiosMock from "axios";
 import { 
   render, 
   waitForElement,
-  wait
+  wait,
+  cleanup
 } from '@testing-library/react'
 import '@testing-library/jest-dom';
 
@@ -23,6 +24,9 @@ describe('ProductList', () => {
     isModalVisible: true,
     toggleModal: jest.fn()
   }
+
+  
+  afterEach(cleanup);
 
   test("Is displayed properly", async () => {
     axiosMock.get.mockResolvedValueOnce({ data: { groups: data }});
@@ -63,22 +67,18 @@ describe('ProductList', () => {
     expect(modal).toBeInTheDocument;
   });
 
-  test("The async request is rejected and an empty container is displayed", async () => {
+  test("The async request is rejected and an error message is displayed", async () => {
     axiosMock.get.mockRejectedValueOnce(new Error('Async error'));
     
-    const { asFragment } = render(
+    const { getByText } = render(
       <ModalContext.Provider value ={context}>
         <ProductList />
       </ModalContext.Provider>
     );
 
-    // this actually helped to display the content after the axios request
-    await wait(() =>{
-      asFragment()
-    });
+    const resolvedEl = await waitForElement(() => getByText(/wrong/i));
     
-    expect(asFragment()).toMatchSnapshot();
+    expect(resolvedEl.textContent).toEqual("We're sorry, something went wrong");
   });
 
 });
-
