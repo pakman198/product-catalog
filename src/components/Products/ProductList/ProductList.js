@@ -9,12 +9,13 @@ import { ModalContext } from '../../../contexts/ModalContext';
 const ProductList = () => {
   const modalContext = useContext(ModalContext);
   const [ products, setProducts ] = useState([]);
+  const [ error, setError ] = useState(false);
 
   useEffect(() => {
     axios.get('http://localhost:3001/').then(({data}) => {
       setProducts(data.groups);
     }).catch(e => {
-      console.log(e);
+      setError(true)
     })
   }, [])
 
@@ -27,6 +28,15 @@ const ProductList = () => {
         </div>
       );
     });
+  } else if(error) {
+    items = (
+      <div className="ui negative message">
+        <div className="header">
+          We're sorry, something went wrong
+        </div>
+        <p>Please try again</p>
+      </div>
+    );
   }
 
   return (
